@@ -1,72 +1,56 @@
-# TypeScript React Chrome Extension Boilerplate
+<h1 align="center">Welcome to quil-autoanswer-hack 👋</h1>
+<p>
+  <img alt="Version" src="https://img.shields.io/badge/version-1.0.0-blue.svg?cacheSeconds=2592000" />
+  <a href="https://github.com/Element21/quil-autoanswer-hack/blob/main/LICENSE" target="_blank">
+    <img alt="License: GNU v3" src="https://img.shields.io/badge/License-GNU v3-yellow.svg" />
+  </a>
+</p>
 
-A basic TypeScript React Chrome Extension boilerplate that gets you started quickly. It supports **TypeScript**, **JSX**, and **automatic reloading** during development. Jest, ESLint and Prettier included, all bundled using [Rollup](https://rollupjs.org/guide/en/) and [`rollup-plugin-chrome-extension`](https://extend-chrome.dev/rollup-plugin).
+> A little client side js to auto answer my school work from the site https://quill.org
 
-## Get Started
+### 🏠 [Homepage](https://github.com/Element21/quil-autoanswer-hack)
 
-### Using `create-react-crx`
-
-Type this into your terminal:
-
-```sh
-npx create-react-crx
-```
-
-Follow the prompts to setup your Chrome extension project.
-
-### Using `git clone`
-
-Type this into your terminal:
+## Install
 
 ```sh
-git clone https://github.com/extend-chrome/ts-react-boilerplate.git my-chrome-extension
-cd my-chrome-extension
-npm install
+yarn install
 ```
 
-> 🖌️ Update your package name and version in `package.json` before you get started!
-
-### Development
-
-For development with automatic reloading:
+## Usage
 
 ```sh
-npm run start
+yarn run start
 ```
 
-Open the [Extensions Dashboard](chrome://extensions), enable "Developer mode", click "Load unpacked", and choose the `dist` folder.
-
-When you make changes in `src` the background script and any content script will reload automatically.
-
-### Production
-
-When it's time to publish your Chrome extension, make a production build to submit to the Chrome Web Store. This boilerplate will use the version in `package.json`, unless you add a version to `src/manifest.json`.
-
-> Make sure you have updated the name and version of your extension in `package.json`.
-
-Run the following line:
+For production (building zip for real extension)
 
 ```sh
-npm run build
+yarn run release
+```
+## Run tests
+
+```sh
+yarn run test
 ```
 
-This will create a ZIP file with your package name and version in the `releases`
-folder.
+## Author
 
-## Source Layout
+👤 **Aiden Marchiori <Element21>**
 
-Your manifest is at `src/manifest.json`, and Rollup will bundle any files you
-include here. All the filepaths in your manifest should point to files in `src`.
+* Github: [@Element21](https://github.com/Element21)
 
-## Features
+## 🤝 Contributing
 
-- Uses Rollup to bundle your extension
-- Chrome Extension automatic reloader
-- Jest configuration for testing
+Contributions, issues and feature requests are welcome!<br />Feel free to check [issues page](https://github.com/Element21/quil-autoanswer-hack/issues). 
 
-## Resources
+## Show your support
 
-[Chrome Extension official documentation](https://developer.chrome.com/docs/webstore/)
+Give a ⭐️ if this project helped you!
 
-[How to Publish your extension step by step video tutorial](https://www.youtube.com/playlist?list=PLYlOQabA4Mm0bPiMKIBMgZK0u2jbYsrC6)
+## 📝 License
 
+Copyright © 2021 [Aiden Marchiori <Element21>](https://github.com/Element21).<br />
+This project is [GNU v3](https://github.com/Element21/quil-autoanswer-hack/blob/main/LICENSE) licensed.
+
+***
+_This README was generated with ❤️ by [readme-md-generator](https://github.com/kefranabg/readme-md-generator)_
