@@ -50,7 +50,7 @@ Give a ⭐️ if this project helped you!
 ## 📝 License
 
 Copyright © 2021 [Aiden Marchiori <Element21>](https://github.com/Element21).<br />
-This project is [GNU v3](https://github.com/Element21/quil-autoanswer-hack/blob/main/LICENSE) licensed.
+This project is [GNU GPL v3](https://github.com/Element21/quil-autoanswer-hack/blob/main/LICENSE) licensed.
 
 ***
 _This README was generated with ❤️ by [readme-md-generator](https://github.com/kefranabg/readme-md-generator)_
