@@ -29,3 +29,7 @@ eventList.forEach(function (event) {
 chrome.runtime.onStartup.addListener(function () {
   nav.resetDataStorage();
 });
+
+chrome.runtime.onMessage.addListener(function (message, sender) {
+  console.log(`${sender}: ${message}`);
+});
