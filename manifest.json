@@ -1,7 +1,7 @@
 {
-  "name": "CHANGE THIS : Extension boilerplate",
+  "name": "Quill Autoanswer Hack",
   "version": "0.0.1",
-  "manifest_version": 2,
+  "manifest_version": 3,
   "description": "This extension was created with the awesome extensionizr.com",
   "homepage_url": "http://extensionizr.com",
   "icons": {
@@ -11,13 +11,11 @@
   },
   "default_locale": "en",
   "background": {
-    "scripts": [
-      "src/bg/background.js"
-    ],
+    "service_worker": "src/bg/background.js",
     "persistent": true
   },
   "options_page": "src/options_custom/index.html",
-  "page_action": {
+  "action": {
     "default_icon": "icons/icon19.png",
     "default_title": "page action demo",
     "default_popup": "src/page_action/page_action.html"
@@ -31,7 +29,7 @@
   "content_scripts": [
     {
       "matches": [
-        "https://www.google.com/*"
+        "https://www.quill.org/*"
       ],
       "css": [
         "src/inject/inject.css"
@@ -39,7 +37,7 @@
     },
     {
       "matches": [
-        "https://www.google.com/*"
+        "https://www.quill.org/*"
       ],
       "js": [
         "src/inject/inject.js"
