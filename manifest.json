@@ -2,8 +2,8 @@
   "name": "Quill Autoanswer Hack",
   "version": "0.0.1",
   "manifest_version": 3,
-  "description": "This extension was created with the awesome extensionizr.com",
-  "homepage_url": "http://extensionizr.com",
+  "description": "Simple js injector extension to inject my quil-autoanswer-hack",
+  "homepage_url": "https://github.com/Element21/quil-autoanswer-hack",
   "icons": {
     "16": "icons/icon16.png",
     "48": "icons/icon48.png",
