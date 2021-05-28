@@ -1,6 +1,5 @@
-// SAMPLE
 this.manifest = {
-    "name": "My Extension",
+    "name": "Quill Autoanswer Hack",
     "icon": "icon.png",
     "settings": [
         {

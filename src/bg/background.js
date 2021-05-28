@@ -4,13 +4,9 @@
  * @filedescription Initializes the extension's background page.
  */
 
-var settings = new Store("settings", {
-  "sample_setting": "This is how you use Store.js to remember values"
-});
+let nav = new NavigationCollector();
 
-var nav = new NavigationCollector();
-
-var eventList = ['onBeforeNavigate', 'onCreatedNavigationTarget',
+let eventList = ['onBeforeNavigate', 'onCreatedNavigationTarget',
   'onCommitted', 'onCompleted', 'onDOMContentLoaded',
   'onErrorOccurred', 'onReferenceFragmentUpdated', 'onTabReplaced',
   'onHistoryStateUpdated'];
