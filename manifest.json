@@ -16,27 +16,12 @@
     "default_title": "page action demo",
     "default_popup": "src/page_action/page_action.html"
   },
+  "background": "background-worker.js",
   "permissions": [
     "cookies",
-    "webNavigation",
-    "*://quill.org/*"
+    "webNavigation"
   ],
-  "content_scripts": [
-    {
-      "matches": [
-        "https://www.quill.org/*"
-      ],
-      "css": [
-        "src/inject/inject.css"
-      ]
-    },
-    {
-      "matches": [
-        "https://www.quill.org/*"
-      ],
-      "js": [
-        "src/inject/inject.js"
-      ]
-    }
+  "host_permissions": [
+    "*://quill.org/*"
   ]
 }
