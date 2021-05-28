@@ -11,9 +11,6 @@
   },
   "default_locale": "en",
   "options_page": "src/options_custom/index.html",
-  "background": {
-    "service_worker": "background-worker.js"
-  },
   "action": {
     "default_icon": "icons/icon19.png",
     "default_title": "page action demo",
