@@ -1,0 +1,12 @@
+{
+  "name": "quil-autoanswer-hack",
+  "version": "0.0.1",
+  "main": "index.js",
+  "repository": "https://github.com/Element21/quil-autoanswer-hack.git",
+  "author": "Aiden Marchiori <aiden@alanmarian.com>",
+  "license": "MIT",
+  "private": true,
+  "devDependencies": {
+    "eslint": "^7.27.0"
+  }
+}
