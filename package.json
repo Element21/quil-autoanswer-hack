@@ -1,12 +1,14 @@
 {
   "name": "quil-autoanswer-hack",
-  "version": "0.0.1",
+  "version": "1.0.0",
+  "description": "A little browser automation to auto answer my school work from the site https://quill.org",
   "main": "index.js",
   "repository": "https://github.com/Element21/quil-autoanswer-hack.git",
   "author": "Aiden Marchiori <aiden@alanmarian.com>",
-  "license": "MIT",
+  "license": "GNU GPL V3",
   "private": true,
-  "devDependencies": {
-    "eslint": "^7.27.0"
+  "dependencies": {
+    "axios": "^0.21.1",
+    "playwright": "^1.11.1"
   }
 }
