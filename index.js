@@ -9,8 +9,9 @@ const axios = require('axios');
     const page = await browser.newPage()
     // Login
     await page.goto('https://www.quill.org/session/new')
+    await page.setDefaultNavigationTimeout(0);
     await page.click('.auth-section > button:nth-child(2)')
-    await page.click('.Autosuggest--textInput')
+    await page.click('#autosuggest-input-')
     await page.keyboard.type(schoolName, { delay: 50 })
     await page.waitForTimeout(1000)
     await page.keyboard.press('Enter')
@@ -31,9 +32,8 @@ const axios = require('axios');
                         // Check if answer is correct
                         if (response.data[answerBlob].optimal) {
                             console.log(response.data[answerBlob].text)
-                            // Fix weird behavior whene only first character of text is typed
+                            // Fix weird behavior whene first character of text is not typed
                             page.keyboard.type(' ' + response.data[answerBlob].text, { delay: 50 })
-                            page.keyboard.press('Enter')
                             break
                         }
                     }
